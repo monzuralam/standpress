@@ -189,3 +189,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+/**
+ * Bootstrap Navwalker
+ */
+require_once get_template_directory() . '/inc/class-wp-bootstrap-navwalker.php';

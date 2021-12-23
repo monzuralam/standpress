@@ -24,36 +24,55 @@
 <?php wp_body_open(); ?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'standpress' ); ?></a>
+	<!-- ***** Preloader Start ***** -->
+	<div id="preloader">
+		<div class="jumper">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+	<!-- ***** Preloader End ***** -->
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
+  <!-- Header -->
+	<header class="">
+		<nav class="navbar navbar-expand-lg">
+			<div class="container">
+				<?php 
+					if( has_custom_logo() ):
+						the_custom_logo();
+					else:
+					?>
+						<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+							<h2><?php bloginfo( 'name' ); ?><em>.</em></h2>
+						</a>
+					<?php 
+					endif;
 				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$standpress_description = get_bloginfo( 'description', 'display' );
-			if ( $standpress_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $standpress_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'standpress' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+				<?php
+					wp_nav_menu(
+						array(
+							'menu'      		=>  '',
+							'container' 		=>  '',
+							'container_class'   =>  '',
+							'container_id'      =>  '',
+							'menu_class'        =>  'navbar-nav ml-auto',
+							'menu_id'           =>  '',
+							'fallback_cb'       =>  'WP_Bootstrap_Navwalker::fallback',
+							'before'            =>  '',
+							'after'            	=>  '',
+							'depth'            	=>   2,
+							'walker'           	=>   new WP_Bootstrap_Navwalker(),
+							'theme_location' 	=> 'menu-1',
+						)
+					);
+				?>
+				</div>
+			</div>
+		</nav>
+	</header>
