@@ -193,3 +193,10 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  * Bootstrap Navwalker
  */
 require_once get_template_directory() . '/inc/class-wp-bootstrap-navwalker.php';
+
+if( ! function_exists('standpress_excerpt_length') ){
+	function standpress_excerpt_length( $length ) {
+		return 20;
+	}
+	add_filter( 'excerpt_length', 'standpress_excerpt_length', 999 );
+}
