@@ -100,6 +100,11 @@ if ( ! function_exists( 'standpress_setup' ) ) :
 				'flex-height' => true,
 			)
 		);
+
+		/**
+		 * Custom image size
+		 */
+		add_image_size( 'blog-thumb', 370, 340, true );
 	}
 endif;
 add_action( 'after_setup_theme', 'standpress_setup' );

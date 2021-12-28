@@ -136,7 +136,7 @@ if ( ! function_exists( 'standpress_post_thumbnail' ) ) :
 			<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
 				<?php
 					the_post_thumbnail(
-						'post-thumbnail',
+						'blog-thumb',
 						array(
 							'alt' => the_title_attribute(
 								array(
