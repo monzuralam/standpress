@@ -402,21 +402,19 @@ header .navbar {
 }
 
 .blog-posts .down-content {
-	padding: 40px;
-	border-right: 1px solid #eee;
-	border-left: 1px solid #eee;
-	border-bottom: 1px solid #eee;
+	padding: 20px;
+	border: 1px solid #eee;
 }
 
 .blog-posts .down-content span {
-	font-size: 18px;
-	text-transform: uppercase;
-	letter-spacing: 0.5px;
-	font-weight: 900;
-	color: #f48840;
+	font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    color: #f48840;
 }
 
-.blog-posts .down-content h4 {
+.blog-posts .down-content h2 {
 	font-size: 24px;
 	text-transform: capitalize;
 	letter-spacing: 0.5px;
@@ -425,6 +423,13 @@ header .navbar {
 	margin: 10px 0px 12px 0px;
 }
 
+.blog-posts .down-content h2 a{
+	color: #000;
+}
+
+.blog-posts .down-content ul.post-info{
+	margin: 0;
+}
 .blog-posts .down-content ul.post-info li {
 	display: inline-block;
 	margin-right: 8px;
@@ -436,13 +441,12 @@ header .navbar {
 	margin-left: 8px;
 }
 
-.blog-posts .down-content h4 {
-	font-size: 20px;
-	letter-spacing: 0.25px;
-}
-
 .grid-system .down-content ul.post-info li {
 	margin-right: 3px;
+	font-size: 14px;
+	color: #aaa;
+	font-weight: 400;
+	transition: all .3s;
 }
 
 .grid-system .down-content ul.post-info li:after {
@@ -465,14 +469,19 @@ header .navbar {
 }
 
 .blog-posts .down-content p {
-	padding: 25px 0px;
-	margin: 25px 0px;
+	padding: 15px 0px;
+	margin: 15px 0px;
 	border-top: 1px solid #eee;
 	border-bottom: 1px solid #eee;
 }
 
 .blog-posts .down-content ul.post-share {
 	text-align: right;
+}
+
+.blog-posts .down-content ul.post-tags{
+	margin: 0;
+	color: #aaa;
 }
 
 .blog-posts .down-content ul.post-tags li,
