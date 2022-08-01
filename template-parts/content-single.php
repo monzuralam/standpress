@@ -7,7 +7,7 @@
                 <div class="col-lg-12">
                     <div class="text-content text-center">
                         <h1><?php bloginfo( 'name' ); ?></h1>
-                        <span class="text-white"><?php bloginfo( 'name' ); _e( ' / ', 'standpress' ); esc_html_e( the_title() ); ?> </span>
+                        <span class="text-white"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?> </a> <?php _e( ' / ', 'standpress' ); esc_html_e( the_title() ); ?> </span>
                     </div>
                 </div>
             </div>
