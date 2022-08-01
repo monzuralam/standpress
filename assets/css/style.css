@@ -25,6 +25,10 @@ h1,h2,h3,h4,h5,h6 {
 	margin: 0px;
 }
 
+p a{
+	text-decoration: underline !important;
+}
+
 .main-button a {
 	display: inline-block;
 	background-color: #f48840;
@@ -38,6 +42,17 @@ h1,h2,h3,h4,h5,h6 {
 
 .main-button a:hover {
 	background-color: #fb9857;
+}
+
+/**
+* Page
+**/
+.page-section{
+	margin: 50px;
+}
+
+.page .entry-content p {
+    margin-bottom: 15px;
 }
 
 .heading-page {
