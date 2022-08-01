@@ -17,7 +17,8 @@ jQuery( document ).ready(function( $ ) {
 
         $(window).scroll(function() {
           var scroll = $(window).scrollTop();
-          var box = $('.header-text').height();
+          var box = 100;
+          console.log( box );
           var header = $('header').height();
 
           if (scroll >= box - header) {
