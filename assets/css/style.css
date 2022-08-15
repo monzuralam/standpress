@@ -276,7 +276,24 @@ header .navbar {
 	font-family: 'FontAwesome';
 }
 
+ul.dropdown-menu.show {
+    padding: 0px;
+}
 
+ul.dropdown-menu li {
+    padding: 5px;
+    margin: 0px !important;
+}
+
+ul.dropdown-menu li a {
+    padding: 0px 5px;
+    font-size: 15px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #1e1e1e;
+    transition: all 0.3s;
+}
 
 /* Banner Style */
 .main-banner .container-fluid {
