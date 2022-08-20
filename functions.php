@@ -205,3 +205,8 @@ if( ! function_exists('standpress_excerpt_length') ){
 	}
 	add_filter( 'excerpt_length', 'standpress_excerpt_length', 999 );
 }
+
+/**
+ * Tgm plugin activation
+ */
+require_once get_theme_file_path( 'inc/tgm.php');
