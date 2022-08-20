@@ -12,9 +12,12 @@ p {
 	color: #7a7a7a;
 	line-height: 30px;
 }
+
 a {
-	text-decoration: none!important;
+	text-decoration: none !important;
+	color: var( --primary );
 }
+
 ul {
 	padding: 0;
 	margin: 0;
@@ -39,7 +42,7 @@ p a{
 
 .main-button a {
 	display: inline-block;
-	background-color: #f48840;
+	background-color: var( --primary );
 	color: #fff;
 	font-size: 13px;
 	font-weight: 500;
@@ -78,7 +81,7 @@ p a{
 }
 
 .page-heading .text-content h4 {
-	color: #f48840;
+	color: var( --primary );
 	font-size: 18px;
 	text-transform: uppercase;
 	font-weight: 900;
@@ -96,7 +99,7 @@ p a{
 
 #preloader {
   overflow: hidden;
-  background: #f48840;
+  background: var( --primary );
   left: 0;
   right: 0;
   top: 0;
@@ -208,7 +211,7 @@ header .navbar {
 .background-header .navbar-nav .nav-link.active,
 .background-header .navbar-nav .nav-link.show,
 .background-header .navbar-nav .show>.nav-link {
-	color: #f48840!important;
+	color: var( --primary )!important;
 }
 .navbar .navbar-brand {
 	float: 	left;
@@ -228,7 +231,7 @@ header .navbar {
 .navbar .navbar-brand h2 em {
 	font-size: 44px;
 	font-style: normal;
-	color: #f48840;
+	color: var( --primary );
 }
 #navbarResponsive {
 	z-index: 999;
@@ -253,14 +256,14 @@ header .navbar {
 .navbar .navbar-nav .nav-link.active,
 .navbar .navbar-nav .nav-link.show,
 .navbar .navbar-nav .show>.nav-link {
-	color: #f48840;
+	color: var( --primary );
 }
 .navbar .navbar-toggler-icon {
 	background-image: none;
 }
 .navbar .navbar-toggler {
 	border-color: #fff;
-	background-color: #f48840;	
+	background-color: var( --primary );	
 	height: 46px;
 	outline: none;
 	border-radius: 0px;
@@ -315,7 +318,7 @@ ul.dropdown-menu li a {
 }
 
 .owl-banner .item .item-content .meta-category span {
-	color: #f48840;
+	color: var( --primary );
 	font-size: 18px;
 	text-transform: uppercase;
 	font-weight: 900;
@@ -354,7 +357,7 @@ ul.dropdown-menu li a {
 }
 
 .owl-banner .item .item-content ul li a:hover {
-	color: #f48840;
+	color: var( --primary );
 }
 
 .owl-banner .owl-nav {
@@ -404,7 +407,7 @@ ul.dropdown-menu li a {
 }
 
 .call-to-action .main-content span {
-	color: #f48840;
+	color: var( --primary );
 	font-size: 18px;
 	font-weight: 900;
 	letter-spacing: 0.5px;
@@ -451,7 +454,7 @@ ul.dropdown-menu li a {
     text-transform: uppercase;
     letter-spacing: 0.5px;
     font-weight: 700;
-    color: #f48840;
+    color: var( --primary );
 }
 
 .blog-posts .down-content h2 {
@@ -505,7 +508,7 @@ ul.dropdown-menu li a {
 }
 
 .blog-posts .down-content ul.post-info li a:hover {
-	color: #f48840;
+	color: var( --primary );
 }
 
 .single-post .blog-posts .down-content p {
@@ -530,7 +533,7 @@ ul.dropdown-menu li a {
 
 .blog-posts .down-content ul.post-tags li:first-child i,
 .blog-posts .down-content ul.post-share li:first-child i {
-	color: #f48840;
+	color: var( --primary );
 	margin-right: 5px;
 }
 
@@ -549,7 +552,7 @@ ul.dropdown-menu li a {
 
 .blog-posts .down-content ul.post-tags li a:hover,
 .blog-posts .down-content ul.post-share li a:hover {
-	color: #f48840;
+	color: var( --primary );
 }
 
 .blog-posts .main-button a {
@@ -583,13 +586,13 @@ ul.page-numbers li a {
 }
 
 ul.page-numbers li.active a {
-	background-color: #f48840;
-	border-color: #f48840;
+	background-color: var( --primary );
+	border-color: var( --primary );
 	color: #fff;
 }
 
 ul.page-numbers li a:hover {
-	color: #f48840;
+	color: var( --primary );
 }
 /**
 * Sidebar
@@ -748,7 +751,7 @@ section.widget form label {
 
 .blog-posts .submit-comment button {
 	display: inline-block;
-	background-color: #f48840;
+	background-color: var( --primary );
 	color: #fff;
 	font-size: 13px;
 	font-weight: 500;
@@ -825,7 +828,7 @@ section.widget form label {
 }
 
 .sidebar .recent-posts ul li h5:hover {
-	color: #f48840;
+	color: var( --primary );
 }
 
 .sidebar .recent-posts ul li span {
@@ -851,7 +854,7 @@ section.widget form label {
 }
 
 .sidebar .categories ul li a:hover {
-	color: #f48840;
+	color: var( --primary );
 }
 
 .sidebar .tags ul li {
@@ -874,8 +877,8 @@ section.widget form label {
 }
 
 .sidebar .tags ul li a:hover {
-	background-color: #f48840;
-	border-color: #f48840;
+	background-color: var( --primary );
+	border-color: var( --primary );
 	color: #fff;
 }
 
@@ -924,7 +927,7 @@ footer ul.social-icons li a {
 }
 
 footer ul.social-icons li a:hover {
-	color: #f48840;
+	color: var( --primary );
 }
 
 footer p {
@@ -934,11 +937,11 @@ footer p {
 }
 
 footer p a {
-	color: #f48840;
+	color: var( --primary );
 }
 
 footer p a:hover {
-	color: #f48840;
+	color: var( --primary );
 }
 
 
@@ -997,7 +1000,7 @@ footer p a:hover {
 
 .contact-us .contact-form button {
 	display: inline-block;
-	background-color: #f48840;
+	background-color: var( --primary );
 	color: #fff;
 	font-size: 13px;
 	font-weight: 500;
@@ -1057,7 +1060,7 @@ footer p a:hover {
 }
 
 .error404 input.search-submit {
-	background-color: #f48840;
+	background-color: var( --primary );
 	color: #fff;
 	font-size: 13px;
 	font-weight: 500;
@@ -1116,7 +1119,7 @@ footer p a:hover {
 
 .comments-area .form-submit .submit {
     display: inline-block;
-    background-color: #f48840;
+    background-color: var( --primary );
     color: #fff;
     font-size: 13px;
     font-weight: 500;
@@ -1163,7 +1166,7 @@ footer p a:hover {
 }
 
 .about-us ul li a:hover {
-	background-color: #f48840;
+	background-color: var( --primary );
 }
 
 
@@ -1232,7 +1235,7 @@ footer p a:hover {
 	.navbar .navbar-nav .nav-link.active,
 	.navbar .navbar-nav .nav-link.show,
 	.navbar .navbar-nav .show>.nav-link {
-		color: #f48840!important;
+		color: var( --primary )!important;
 		border-bottom: none!important;
 		padding-bottom: 15px;
 	}
