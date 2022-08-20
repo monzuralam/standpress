@@ -210,3 +210,8 @@ if( ! function_exists('standpress_excerpt_length') ){
  * Tgm plugin activation
  */
 require_once get_theme_file_path( 'inc/tgm.php');
+
+/**
+ * Theme options
+ */
+require_once get_theme_file_path( 'inc/theme-options.php');
