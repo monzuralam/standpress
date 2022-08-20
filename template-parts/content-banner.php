@@ -7,7 +7,9 @@
 ?>
 <!-- Banner Starts Here -->
 <div class="header-text">
-    <section class="page-heading" style="background-image: url('<?php echo esc_url( carbon_get_theme_option('standpress_default_banner') ); ?>');">
+    <section class="page-heading" style="background-image: url('<?php if( function_exists( 'carbon_get_theme_option' ) ){
+        echo esc_url( carbon_get_theme_option('standpress_default_banner') );
+    }?>');">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
