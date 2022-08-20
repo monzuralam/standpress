@@ -13,22 +13,9 @@ get_header();
 	<main id="primary" class="site-main">
 		
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<!-- Banner Starts Here -->
-			<div class="header-text">
-				<section class="page-heading">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="text-content text-center">
-									<h1 class=""><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'standpress' ); ?></h1>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-			</div>
-			<!-- Banner Ends Here -->
 
+		<?php get_template_part( 'template-parts/content', 'banner' ); ?>
+		
 			<section class="page-section">
 				<div class="container">
 					<div class="row">

@@ -1,20 +1,7 @@
 <!-- Page Content -->
-<!-- Banner Starts Here -->
-<div class="header-text">
-    <section class="page-heading">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="text-content text-center">
-                        <h1><?php bloginfo( 'name' ); ?></h1>
-                        <span class="text-white"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?> </a> <?php _e( ' / ', 'standpress' ); echo esc_html( the_title() ); ?> </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</div>
-<!-- Banner Ends Here -->
+
+<?php get_template_part( 'template-parts/content', 'banner' ); ?>
+
 <!-- Call to action start here -->
 <section class="call-to-action">
     <div class="container">

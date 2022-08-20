@@ -11,22 +11,8 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<!-- Banner Starts Here -->
-	<div class="header-text">
-		<section class="page-heading">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="text-content text-center">
-							<h1><?php the_title(); ?></h1>
-							<span class="text-white"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?> </a> <?php _e( ' / ', 'standpress' ); esc_html( the_title() ); ?> </span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	</div>
-	<!-- Banner Ends Here -->
+
+	<?php get_template_part( 'template-parts/content', 'banner' ); ?>
 
 	<section class="page-section">
 		<div class="container">
