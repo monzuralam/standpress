@@ -13,15 +13,29 @@
 	<footer id="colophon" class="site-footer">
 		<div class="container">
 			<div class="row">
+				<?php
+				if( function_exists( 'carbon_get_theme_option' ) ):
+					$social_enable = carbon_get_theme_option( 'standpress_footer_social_enable' );
+					$social_icons = carbon_get_theme_option( 'standpress_social_icons' );
+					if( 1 == $social_enable ):
+				?>
 				<div class="col-lg-12">
 					<ul class="social-icons">
-						<li><a href="#">Facebook</a></li>
-						<li><a href="#">Twitter</a></li>
-						<li><a href="#">Behance</a></li>
-						<li><a href="#">Linkedin</a></li>
-						<li><a href="#">Dribbble</a></li>
+						<?php
+							foreach( $social_icons as $social_icon ){
+								?>
+								<li>
+									<a href="<?php echo esc_url( $social_icon['url'] ); ?>"><?php echo esc_html( $social_icon['title'] ); ?></a>
+								</li>
+								<?php
+							}
+						?>
 					</ul>
 				</div>
+				<?php 
+					endif; 
+				endif; 
+				?>
 				<div class="col-lg-12">
 					<div class="copyright-text">
 						<p>
